@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>랑그릿사 모바일 용병</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    	<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/hero.css" />
+	</head>
+	<body>
+	<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="index.html" id="logo">랑그릿사 모바일</a></h1>
+									<nav id="nav">
+									<a href="index.html">메인</a>
+										<a href="hero.html" class="current-page-item" >영웅</a>
+										<a href="troop.html">용병</a>
+										<a href="schedule.html">스케쥴</a>
+									</nav>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+		<div id="main">
+			<div class="container">
+				<div class="row main-row">
+					<div class="col-12">
+						<section>
+						<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">모두 보기</button>
+  <button class="btn" onclick="filterSelection('쓰')"><img src="img/type/ssr.png" height="20px"/></button>
+  <button class="btn" onclick="filterSelection('스')"><img src="img/type/sr.png" height="20px"/></button>
+  <button class="btn" onclick="filterSelection('알')"><img src="img/type/r.png" height="20px"/></button>
+  <button class="btn" onclick="filterSelection('엔')"><img src="img/type/n.png" height="20px"/></button>
+  <p></p>
+  <button class="btn" onclick="filterSelection('주인공')"><img src="img/Group/0.png" height="40px"/></button>
+  <button class="btn" onclick="filterSelection('빛')"><img src="img/Group/1.png" height="40px"/></button>
+  <button class="btn" onclick="filterSelection('제국')"><img src="img/Group/2.png" height="40px"/></button>
+  <button class="btn" onclick="filterSelection('기원')"><img src="img/Group/3.png" height="40px"/></button>
+  <button class="btn" onclick="filterSelection('암흑')"><img src="img/Group/4.png" height="40px"/></button>
+  <button class="btn" onclick="filterSelection('공주')"><img src="img/Group/5.png" height="40px"/></button>
+  <button class="btn" onclick="filterSelection('전략')"><img src="img/Group/6.png" height="40px"/></button>
+  <button class="btn" onclick="filterSelection('전설')"><img src="img/Group/7.png" height="40px"/></button>
+  <button class="btn" onclick="filterSelection('유성')"><img src="img/Group/8.png" height="40px"/></button>
+  <button class="btn" onclick="filterSelection('시공')"><img src="img/Group/9.png" height="40px"/></button>
+  <button class="btn" onclick="filterSelection('초인')"><img src="img/Group/10.png" height="40px"/></button>
+  <button class="btn" onclick="filterSelection('리인카')"><img src="img/Group/11.png" height="40px"/></button>
+  <p></p>
+  <button class="btn" onclick="filterSelection('초절')">초절 보유</button>
+  <button class="btn" onclick="filterSelection('각성')">각성 보유</button>
+  <button class="btn" onclick="filterSelection('전용장비')">전용장비 보유</button>
+</div>
+  </section>
+								<section>
+<div class="card">
+<img class="filterDiv 엔 주인공 빛 각성 전용장비 초절" src="img/card/매튜초절.png" />
+<img class="filterDiv 엔 주인공 빛 초인 전용장비" src="img/card/아멜다.png"/>
+<img class="filterDiv 엔 빛 전용장비 초절" src="img/card/그레니어초절.png"/>
+<img class="filterDiv 알 빛" src="img/card/아론.png"/>
+<img class="filterDiv 알 제국 공주" src="img/card/안나.png"/>
+<img class="filterDiv 알 기원 전략" src="img/card/디오스.png"/>
+<img class="filterDiv 알 빛" src="img/card/키스.png"/>
+<img class="filterDiv 알 빛 기원 초인" src="img/card/제시카.png"/>
+<img class="filterDiv 알 빛 전략" src="img/card/스코트.png"/>
+<img class="filterDiv 알 제국 유성" src="img/card/로우가.png"/>
+<img class="filterDiv 알 기원" src="img/card/루인.png"/>
+<img class="filterDiv 알 제국 유성" src="img/card/레아드.png"/>
+<img class="filterDiv 알 기원 유성" src="img/card/피엘.png"/>
+<img class="filterDiv 알 제국 전략" src="img/card/레티시아.png"/>
+<img class="filterDiv 알 빛 유성" src="img/card/레스터.png"/>
+<img class="filterDiv 스 기원 공주 초인" src="img/card/소피아.png"/>
+<img class="filterDiv 스 암흑 유성 전용장비" src="img/card/페라키아.png"/>
+<img class="filterDiv 스 기원 공주 전용장비 초절" src="img/card/프레아초절.png"/>
+<img class="filterDiv 스 제국 전략" src="img/card/발가스.png"/>
+<img class="filterDiv 스 제국 암흑" src="img/card/파나.png"/>
+<img class="filterDiv 스 빛 공주 유성" src="img/card/나암.png"/>
+<img class="filterDiv 스 주인공 빛 공주 각성" src="img/card/크리스.png"/>
+<img class="filterDiv 스 기원 유성 전용장비" src="img/card/키리카제.png"/>
+<img class="filterDiv 스 기원 유성 전용장비" src="img/card/실버울프.png"/>
+<img class="filterDiv 스 제국 암흑 공주 각성 전용장비" src="img/card/소니아.png"/>
+<img class="filterDiv 스 제국 전략 전용장비" src="img/card/에마링크.png"/>
+<img class="filterDiv 스 제국 전략 전용장비" src="img/card/이멜다.png"/>
+<img class="filterDiv 스 기원 공주 각성 전용장비" src="img/card/리파니.png"/>
+<img class="filterDiv 스 제국 암흑 전략 전용장비" src="img/card/에그베르트.png"/>
+<img class="filterDiv 스 빛 제국 각성 전용장비" src="img/card/헤인.png"/>
+<img class="filterDiv 스 빛 제국 전략 전용장비 초절" src="img/card/란스초절.png"/>
+<img class="filterDiv 쓰 암흑 초인 초절" src="img/card/보젤초절.png"/>
+<img class="filterDiv 쓰 주인공 빛 각성 전용장비 초절" src="img/card/레딘초절.png"/>
+<img class="filterDiv 쓰 제국 전략 각성 전용장비 초절" src="img/card/레온초절.png"/>
+<img class="filterDiv 쓰 제국 암흑 초인 초절" src="img/card/베른하르트초절.png"/>
+<img class="filterDiv 쓰 암흑 공주 각성 전용장비" src="img/card/라나.png"/>
+<img class="filterDiv 쓰 주인공 빛 제국 전용장비 초절" src="img/card/엘윈초절.png"/>
+<img class="filterDiv 쓰 빛 공주 유성 각성 전용장비" src="img/card/쉐리.png"/>
+<img class="filterDiv 쓰 주인공 빛 공주" src="img/card/리아나.png"/>
+<img class="filterDiv 쓰 제국 암흑 전략 전용장비 초절" src="img/card/알테뮬러초절.png"/>
+<img class="filterDiv 쓰 기원 공주 전략 각성 초절" src="img/card/루나초절.png"/>
+<img class="filterDiv 쓰 주인공 기원 유성 각성 전용장비 초절" src="img/card/디하르트초절.png"/>
+<img class="filterDiv 쓰 주인공 기원 공주" src="img/card/티아리스.png"/>
+<img class="filterDiv 쓰 기원 유성 초인 각성 전용장비 초절" src="img/card/쥬그라초절.png" onclick="javascript:location.href='hero/쥬그라.html';" style="cursor:pointer;"/>
+<img class="filterDiv 쓰 암흑 유성 초인 전용장비 초절" src="img/card/젤다초절.png" onclick="javascript:location.href='hero/젤다.html';" style="cursor:pointer;" />
+<img class="filterDiv 쓰 기원 전략 각성" src="img/card/제리올.png"/>
+<img class="filterDiv 쓰 공주 전설 전용장비 초절" src="img/card/셀파닐초절.png"/>
+<img class="filterDiv 쓰 공주 유성 전설 각성 전용장비" src="img/card/안젤리나.png"/>
+<img class="filterDiv 쓰 전략 전설 전용장비 초절" src="img/card/란포드초절.png"/>
+<img class="filterDiv 쓰 암흑 전설" src="img/card/리스틸.png"/>
+<img class="filterDiv 쓰 주인공 빛 시공 각성" src="img/card/에스텔.png"/>
+<img class="filterDiv 쓰 공주 유성 시공 초절" src="img/card/요슈아초절.png"/>
+<img class="filterDiv 스 공주 전설 시공" src="img/card/클로제.png"/>
+<img class="filterDiv 쓰 제국 기원 시공" src="img/card/레온하르트.png"/>
+<img class="filterDiv 쓰 암흑 전설 시공 각성" src="img/card/렌.png"/>
+<img class="filterDiv 스 제국 전략 시공" src="img/card/올리비에.png"/>
+<img class="filterDiv 쓰 주인공 전설 각성 초절" src="img/card/란디우스초절.png"/>
+<img class="filterDiv 쓰 주인공 전설 각성 전용장비" src="img/card/레이첼.png"/>
+<img class="filterDiv 쓰 전략 전설 각성" src="img/card/윌러.png"/>
+<img class="filterDiv 쓰 암흑 초인 전용장비 초절" src="img/card/기자로프초절.png"/>
+<img class="filterDiv 스 전략 전설 전용장비" src="img/card/세레나.png"/>
+<img class="filterDiv 쓰 주인공 전설 유성 초절" src="img/card/시그마초절.png"/>
+<img class="filterDiv 쓰 주인공 전설 초인 전용장비" src="img/card/람다.png"/>
+<img class="filterDiv 쓰 주인공 제국 시공" src="img/card/사쿠라.png"/>
+<img class="filterDiv 쓰 제국 공주 시공 각성" src="img/card/스미레.png"/>
+<img class="filterDiv 스 제국 공주 시공" src="img/card/아이리스.png"/>
+<img class="filterDiv 스 빛 시공 전용장비 초절" src="img/card/안젤리카초절.png"/>
+<img class="filterDiv 쓰 공주 전설 유성" src="img/card/클라렛.png"/>
+<img class="filterDiv 쓰 빛 기원 전략 전용장비" src="img/card/엘라스타.png"/>
+<img class="filterDiv 쓰 암흑 유성" src="img/card/오메가.png"/>
+<img class="filterDiv 쓰 빛 공주 초인" src="img/card/유리아.png"/>
+<img class="filterDiv 쓰 주인공 시공 초인 각성 초절" src="img/card/유스케초절.png"/>
+<img class="filterDiv 쓰 전략 전설 시공 각성" src="img/card/쿠라마.png"/>
+<img class="filterDiv 스 빛 유성 시공" src="img/card/카즈마.png"/>
+<img class="filterDiv 쓰 기원 유성 시공" src="img/card/히에이.png"/>
+<img class="filterDiv 쓰 제국 암흑 시공" src="img/card/도구로.png"/>
+<img class="filterDiv 쓰 전략 전설 초인" src="img/card/레인폴스.png"/>
+<img class="filterDiv 쓰 빛 제국 암흑" src="img/card/베티.png"/>
+<img class="filterDiv 스 전설 유성" src="img/card/알프레드.png"/>
+<img class="filterDiv 쓰 빛 기원 초인 전용장비" src="img/card/여신의화신.png"/>
+<img class="filterDiv 쓰 제국 공주" src="img/card/에밀리아.png"/>
+<img class="filterDiv 쓰 전설 유성" src="img/card/비라쥬.png"/>
+<img class="filterDiv 쓰 전략 전설" src="img/card/미지의기사.png"/>
+<img class="filterDiv 쓰 빛 기원 초인" src="img/card/아카야.png"/>
+<img class="filterDiv 쓰 전설 유성" src="img/card/브렌다.png"/>
+<img class="filterDiv 스 빛 전설 유성" src="img/card/올리보.png"/>
+<img class="filterDiv 쓰 기원 공주 시공" src="img/card/디드리트.png"/>
+<img class="filterDiv 쓰 암흑 전략 시공" src="img/card/아슈람.png"/>
+<img class="filterDiv 스 주인공 기원 시공" src="img/card/판.png"/>
+<img class="filterDiv 스 암흑 유성 시공" src="img/card/필로테스.png"/>
+<img class="filterDiv 쓰 주인공 제국 리인카 각성 초절" src="img/card/아레스초절.png"/>
+<img class="filterDiv 쓰 제국 리인카 각성" src="img/card/마이야.png"/>
+<img class="filterDiv 쓰 빛 전략 각성" src="img/card/일루시아.png"/>
+<img class="filterDiv 쓰 유성 초인 각성" src="img/card/실린카.png"/>
+</div>
+</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div id="footer-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<div id="copyright">
+									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+								</div>
+
+							</div>
+						</div>
+					
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/hero.js"></script>
+
+	</body>
+</html>

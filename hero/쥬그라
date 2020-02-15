@@ -13,25 +13,6 @@
 		<link rel="stylesheet" href="../assets/css/star-rating.css" media="all" type="text/css"/>
 	</head>
 	<body>
-	<div id="header-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-
-								<header id="header">
-									<h1><a href="index.html" id="logo">랑그릿사 모바일</a></h1>
-									<nav id="nav">
-									<a href="../index.html">메인</a>
-										<a href="../hero.html" class="current-page-item" >영웅</a>
-										<a href="../troop.html">용병</a>
-										<a href="../schedule.html">스케쥴</a>
-									</nav>
-								</header>
-
-							</div>
-						</div>
-					</div>
-				</div>
 		<div id="page-wrapper">
 			<div class="slideshow-container">
 
@@ -74,7 +55,7 @@
 				<div id="main">
 					<div class="container">
 						<div class="row main-row">
-							<div class="col-5 col-12-medium">
+							<div class="col-6 col-12-medium">
 
 								<section>
 							<table border="0" cellpadding="0" cellspacing="1" >
@@ -90,7 +71,8 @@
 					</tr>
 					<tr>
 						<th>CV</th>
-						<td colspan="3">니시다 노조미</td>
+						<td colspan="3">니시다 노조미<br><audio controls="" controlslist="nodownload">
+ 						<source src="https://docs.google.com/uc?export=open&id=1w5bLPxISCqvIGjfVZTi5nP4NHkeXVEqW" type='audio/wav' /></td>
 					</tr>
 					<tr>
 						<th>희귀도</th>
@@ -141,7 +123,7 @@
 
 							</div>
 							
-							<div class="col-7 col-12-medium">
+							<div class="col-6 col-12-medium">
 
 								<section>
 <table>
@@ -250,7 +232,6 @@
 							<div class="col-6 col-12-medium">
 
 								<section>
-								<div class="view_title">클래스 최종 능력치(70레벨 호감도4,5 10레벨)</div>
 									<table border="0" cellpadding="0" cellspacing="1">
 					<colgroup>
 						<col width="22%">
@@ -314,7 +295,7 @@
 								</section>
 
 							</div>
-								<div class="col-8 col-12-medium">
+								<div class="col-6 col-12-medium">
 							<div class="view_title">재료정보</div>
 								<section>
 								
@@ -359,7 +340,7 @@
 			</table>
 		</div>
 		</section>
-							<div class="col-4 col-12-medium">
+							<div class="col-6 col-12-medium">
 							<section>
 							<table border="0" cellpadding="0" cellspacing="1">
 					<colgroup>
@@ -550,7 +531,7 @@
 							<div class="col-12">
 
 								<section>
-									<div class="view_title">스킬 정보</div>
+									<div class="view_title">스킬</div>
 									<table border="0" cellpadding="0" cellspacing="1">
 					<colgroup>
 						<col width="22%">
@@ -755,7 +736,7 @@
 							<div class="col-12">
 
 								<div id="copyright">
-									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+									&copy; Untitled. All rights reserved. | Design: HTML5 UP</a>
 								</div>
 
 							</div>
