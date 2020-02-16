@@ -1,0 +1,725 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>랑그릿사 모바일</title>
+		<link rel="icon" type="image/png" href="favicon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    	<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/event.css" />
+		
+	</head>
+	<body>
+	<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="index.html" id="logo">랑그릿사 모바일</a></h1>
+									<nav id="nav">
+									<a href="index.html">메인</a>
+										<a href="hero.html">영웅</a>									
+										<a href="troop.html">용병</a>
+										<a href="schedule.html">스케쥴</a>
+										<a href="event.html" class="current-page-item">이벤트</a>
+									</nav>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+		<div id="main">
+			<div class="container">
+				<div class="row main-row">
+					<div class="col-12">
+						<section>
+						<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">모두 보기</button>
+  <button class="btn" onclick="filterSelection('이벤트')">이벤트</button>
+  <button class="btn" onclick="filterSelection('점수')">이벤트(점수)</button>
+  <button class="btn" onclick="filterSelection('교환')">이벤트(교환)</button>
+  <button class="btn" onclick="filterSelection('사건')">사건</button>
+  <button class="btn" onclick="filterSelection('pve')">PVE</button>
+  <button class="btn" onclick="filterSelection('pvp')">PVP</button>
+</div>
+							</section>
+								<section>
+
+<div class="chat-popup" id="myForm1">
+<form class="form-container">
+
+  </form>
+</div>
+
+<div class="chat-popup" id="myForm2">
+<form class="form-container">
+
+  </form>
+</div>
+
+
+
+								</section>
+								<section>
+<img class="filterDiv 이벤트 점수" onclick="openForm()" src="img/banner/Picture_Notice_1006.png" width="100%"/>
+<div class="chat-popup" id="myForm">
+  <form class="form-container">
+  <div class="view_title">추천영웅</div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<tr>
+					<td colspan="4">
+					<img src="img/card/매튜.png"/>
+					<img src="img/card/아멜다.png"/>
+					<img src="img/card/젤다.png"/>
+					<img src="img/card/루나.png"/>
+					<img src="img/card/리아나.png"/>
+					<img src="img/card/시그마.png"/>
+					<img src="img/card/람다.png"/>
+					<img src="img/card/레딘.png"/>
+					<img src="img/card/라나.png"/>
+					<img src="img/card/에그베르트.png"/>
+					<img src="img/card/알테뮬러.png"/>
+					</td>
+				</tr>
+			</table>
+			<div class="view_title">보상목록</div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<colgroup>
+					<col width="20%">
+					<col width="40%">
+					<col width="40%">
+				</colgroup>
+				<tr>
+					<td>점수</td>
+					<th>보상</th>
+					<td>설명</td>
+				<tr>
+					<td>100</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 10</td>
+				</tr>
+				<tr>
+					<td>200</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 100,000</td>
+				</tr>
+				<tr>
+					<td>300</td>
+					<th><img src="img/item/골드티켓.png"/></th>
+					<td>골드티켓 X 1</td>
+				</tr>
+				<tr>
+					<td>400</td>
+					<th><img src="img/item/알열쇠.png"/></th>
+					<td>순수한 마음의 열쇠 X 8</td>
+				</tr>
+				<tr>
+					<td>500</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 10</td>
+				</tr>
+				<tr>
+					<td>700</td>
+					<th><img src="img/item/햄버거.png"/></th>
+					<td>햄버거 X 1</td>
+				</tr>
+				<tr>
+					<td>1000</td>
+					<th>
+					<img src="img/item/스알검병.png"/>
+					<img src="img/item/스알창병.png"/>
+					<img src="img/item/스알기병.png"/>
+					</th>
+					<td>
+					고급 보병 교재 X 6
+					</br>
+					고급 창병 교재 X 6
+					</br>
+					고급 기병 교재 X 6
+					</td>
+				</tr>
+				<tr>
+					<td>1500</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 150,000</td>
+				</tr>
+				<tr>
+					<td>2000</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 20</td>
+				</tr>
+				<tr>
+					<td>2500</td>
+					<th><img src="img/item/골드티켓.png"/></th>
+					<td>골드티켓 X 1</td>
+				</tr>
+				<tr>
+					<td>3000</td>
+					<th><img src="img/item/스알망치.png"/></th>
+					<td>공인의 망치 고급 X 5</td>
+				</tr>
+				<tr>
+					<td>3500</td>
+					<th><img src="img/item/알열쇠.png"/></th>
+					<td>순수한 마음의 열쇠 X 12</td>
+				</tr>
+				<tr>
+					<td>4000</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 150,000</td>
+				</tr>
+				<tr>
+					<td>4500</td>
+					<th>
+					<img src="img/item/스알비병.png"/>
+					<img src="img/item/스알궁병.png"/>
+					<img src="img/item/스알승병.png"/>
+					</th>
+					<td>
+					고급 비병 교재 X 6
+					</br>
+					고급 궁병 교재 X 6
+					</br>
+					고급 승병 교재 X 6
+					</td>
+				</tr>
+				<tr>
+					<td>5000</td>
+					<th><img src="img/item/스알상자.png"/></th>
+					<td>SR 악세상자 X 1</td>
+				</tr>
+				<tr>
+					<td>5500</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 20</td>
+				</tr>
+				<tr>
+					<td>6000</td>
+					<th><img src="img/item/스알열쇠.png"/></th>
+					<td>빛나는 마음의 열쇠 X 8</td>
+				</tr>
+				<tr>
+					<td>7000</td>
+					<th><img src="img/item/쓰알갑옷.png"/></th>
+					<td>SSR 갑옷 X 1</td>
+				</tr>
+				<tr>
+					<td>8000</td>
+					<th><img src="img/item/골드티켓.png"/></th>
+					<td>골드티켓 X 1</td>
+				</tr>
+				<tr>
+					<td>9000</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 200,000</td>
+				</tr>
+				<tr>
+					<td>10000</td>
+					<th><img src="img/item/마음상자1.png"/></th>
+					<td>원주의 원소 X 1</td>
+				</tr>
+				<tr>
+					<td>11500</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 20</td>
+				</tr>
+				<tr>
+					<td>13000</td>
+					<th><img src="img/item/쓰알망치.png"/></th>
+					<td>공인의 망치 특급 X 2</td>
+				</tr>
+				<tr>
+					<td>15000</td>
+					<th><img src="img/item/마음상자2.png"/></th>
+					<td>영혼의 원소 X 2</td>
+				</tr>
+				<tr>
+					<td>17000</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 30</td>
+				</tr>
+				<tr>
+					<td>19500</td>
+					<th><img src="img/item/쓰알열쇠.png"/></th>
+					<td>화려한 마음의 열쇠 X 5</td>
+				</tr>
+				<tr>
+					<td>22000</td>
+					<th><img src="img/item/골드티켓.png"/></th>
+					<td>골드티켓 X 1</td>
+				</tr>
+				<tr>
+					<td>24500</td>
+					<th><img src="img/item/마음상자1.png"/></th>
+					<td>원주의 원소 X 2</td>
+				</tr>
+				<tr>
+					<td>27000</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 30</td>
+				</tr>
+				<tr>
+					<td>30000</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 300,000</td>
+				</tr>
+				<tr>
+					<td>33000</td>
+					<th><img src="img/item/Icon_Aimeeda_Skin03.png"/></th>
+					<td>아멜다 스킨</td>
+				</tr>
+				<tr>
+					<td>36000</td>
+					<th><img src="img/item/쓰알투구.png"/></th>
+					<td>SSR 투구 X 1</td>
+				</tr>
+				<tr>
+					<td>39000</td>
+					<th><img src="img/item/마음.png"/></th>
+					<td>초연의 마음 X 2</td>
+				</tr>
+				<tr>
+					<td>42000</td>
+					<th><img src="img/item/마음상자1.png"/></th>
+					<td>원주의 원소 X 3</td>
+				</tr>
+				<tr>
+					<td>45000</td>
+					<th><img src="img/item/빨몬드.png"/></th>
+					<td>광휘미스릴 X 100</td>
+				</tr>
+				<tr>
+					<td>48000</td>
+					<th><img src="img/item/룬스톤.png"/></th>
+					<td>룬스톤 X 1</td>
+				</tr>
+				<tr>
+					<td>51500</td>
+					<th><img src="img/item/마음상자2.png"/></th>
+					<td>영혼의 원소 X 3</td>
+				</tr>
+				<tr>
+					<td>55000</td>
+					<th><img src="img/item/쓰알상자.png"/></th>
+					<td>SSR 악세상자 X 1</td>
+				</tr>
+				<tr>
+					<td>58500</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 400,000</td>
+				</tr>
+				<tr>
+					<td>62000</td>
+					<th><img src="img/item/골드티켓.png"/></th>
+					<td>골드티켓 X 1</td>
+				</tr>
+				<tr>
+					<td>65500</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 40</td>
+				</tr>
+				<tr>
+					<td>69000</td>
+					<th><img src="img/item/쓰알열쇠.png"/></th>
+					<td>화려한 마음의 열쇠 X 8</td>
+				</tr>
+				<tr>
+					<td>73000</td>
+					<th><img src="img/item/빨몬드.png"/></th>
+					<td>광휘미스릴 X 100</td>
+				</tr>
+				<tr>
+					<td>77000</td>
+					<th><img src="img/item/쓰알무기.png"/></th>
+					<td>SSR 무기 X 1</td>
+				</tr>
+				<tr>
+					<td>81000</td>
+					<th><img src="img/item/마음.png"/></th>
+					<td>초연의 마음 X 3</td>
+				</tr>
+				<tr>
+					<td>85000</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 500,000</td>
+				</tr>
+				<tr>
+					<td>90000</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 50</td>
+				</tr>
+			</table>
+  
+  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<img class="filterDiv 이벤트 교환" onclick="openForm1()" src="img/banner/Picture_Notice_1106.png" width="100%"/>
+<img class="filterDiv 이벤트 점수" onclick="openForm2()" src="img/banner/Picture_Notice_1206.png" width="100%"/>
+<img class="filterDiv 이벤트 교환" onclick="openForm3()" src="img/banner/Picture_Notice_1308.png" width="100%"/>
+<img class="filterDiv 이벤트 점수" onclick="openForm4()" src="img/banner/Picture_Notice_1407.png" width="100%"/>
+<img class="filterDiv 사건" onclick="openForm5()" src="img/banner/Picture_Notice_1506.png" width="100%"/>
+<img class="filterDiv pve" onclick="openForm6()" src="img/banner/Picture_Notice_1507.png" width="100%"/>
+<img class="filterDiv 이벤트 교환" onclick="openForm7()" src="img/banner/Picture_Notice_1605.png" width="100%"/>
+<img class="filterDiv 이벤트 점수" onclick="openForm8()" src="img/banner/Picture_Notice_1708.png" width="100%"/>
+<img class="filterDiv 사건" onclick="openForm9()" src="img/banner/Picture_Notice_1710.png" width="100%"/>
+<img class="filterDiv 이벤트 교환" onclick="openForm10()" src="img/banner/Picture_Notice_1806.png" width="100%"/>
+<img class="filterDiv 사건" onclick="openForm11()" src="img/banner/Picture_Notice_1808.png" width="100%"/>
+<img class="filterDiv pvp" onclick="openForm12()" src="img/banner/Picture_Notice_1809.png" width="100%"/>
+<img class="filterDiv 이벤트 점수" onclick="openForm13()" src="img/banner/Picture_Notice_1908.png" width="100%"/>
+<div class="chat-popup" id="myForm13">
+  <form class="form-container">
+  <div class="view_title">추천영웅</div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<tr>
+					<td colspan="4">
+					<img src="img/card/에밀리아.png" width="100px"/>
+					<img src="img/card/레이첼.png" width="100px"/>
+					<img src="img/card/여신의화신.png" width="100px"/>
+					<img src="img/card/란디우스.png" width="100px"/>
+					<img src="img/card/란포드.png" width="100px"/>
+					<img src="img/card/알테뮬러.png" width="100px"/>
+					<img src="img/card/매튜.png" width="100px"/>
+					<img src="img/card/아멜다.png" width="100px"/>
+					<img src="img/card/파나.png" width="100px"/>
+					<img src="img/card/소피아.png" width="100px"/>
+					</td>
+				</tr>
+			</table>
+			<div class="view_title">보상목록</div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<colgroup>
+					<col width="20%">
+					<col width="40%">
+					<col width="40%">
+				</colgroup>
+				<tr>
+					<td>점수</td>
+					<th>보상</th>
+					<td>설명</td>
+				<tr>
+					<td>100</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 10</td>
+				</tr>
+				<tr>
+					<td>200</td>
+					<th><img src="img/item/골드티켓.png"/></th>
+					<td>골드티켓 X 1</td>
+				</tr>
+				<tr>
+					<td>300</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 150,000</td>
+				</tr>
+				<tr>
+					<td>400</td>
+					<th><img src="img/item/햄버거.png"/></th>
+					<td>햄버거 X 1</td>
+				</tr>
+				<tr>
+					<td>500</td>
+					<th><img src="img/item/Piece_Fana.png"/></th>
+					<td>파나조각 X 30</td>
+				</tr>
+				<tr>
+					<td>700</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 20</td>
+				</tr>
+				<tr>
+					<td>1000</td>
+					<th>
+					<img src="img/item/스알검병.png"/>
+					<img src="img/item/스알창병.png"/>
+					<img src="img/item/스알기병.png"/>
+					</th>
+					<td>
+					고급 보병 교재 X 10
+					</br>
+					고급 창병 교재 X 10
+					</br>
+					고급 기병 교재 X 10
+					</td>
+				</tr>
+				<tr>
+					<td>1500</td>
+					<th><img src="img/item/알열쇠.png"/></th>
+					<td>순수한 마음의 열쇠 X 12</td>
+				</tr>
+				<tr>
+					<td>2000</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 200,000</td>
+				</tr>
+				<tr>
+					<td>2500</td>
+					<th><img src="img/item/스알열쇠.png"/></th>
+					<td>빛나는 마음의 열쇠 X 8</td>
+				</tr>
+				<tr>
+					<td>3000</td>
+					<th><img src="img/item/골드티켓.png"/></th>
+					<td>골드티켓 X 1</td>
+				</tr>
+				<tr>
+					<td>3500</td>
+					<th>
+					<img src="img/item/스알비병.png"/>
+					<img src="img/item/스알궁병.png"/>
+					<img src="img/item/스알승병.png"/>
+					</th>
+					<td>
+					고급 비병 교재 X 10
+					</br>
+					고급 궁병 교재 X 10
+					</br>
+					고급 승병 교재 X 10
+					</td>
+				</tr>
+				<tr>
+					<td>4000</td>
+					<th><img src="img/item/Piece_Fana.png"/></th>
+					<td>파나조각 X 30</td>
+				</tr>
+				<tr>
+					<td>4500</td>
+					<th><img src="img/item/스알상자.png"/></th>
+					<td>SR 악세상자 X 1</td>
+				</tr>
+				<tr>
+					<td>5000</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 250,000</td>
+				</tr>
+				<tr>
+					<td>5500</td>
+					<th><img src="img/item/쓰알망치.png"/></th>
+					<td>공인의 망치 특급 X 3</td>
+				</tr>
+				<tr>
+					<td>6000</td>
+					<th>
+					<img src="img/item/쓰알검병.png"/>
+					<img src="img/item/쓰알창병.png"/>
+					<img src="img/item/쓰알기병.png"/>
+					</th>
+					<td>
+					특급 보병 교재 X 10
+					</br>
+					특급 창병 교재 X 10
+					</br>
+					특급 기병 교재 X 10
+					</td>
+				</tr>
+				<tr>
+					<td>7000</td>
+					<th><img src="img/item/쓰알갑옷.png"/></th>
+					<td>SSR 갑옷 X 1</td>
+				</tr>
+				<tr>
+					<td>8000</td>
+					<th><img src="img/item/마음상자1.png"/></th>
+					<td>원주의 원소 X 3</td>
+				</tr>
+				<tr>
+					<td>9000</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 300,000</td>
+				</tr>
+				<tr>
+					<td>10000</td>
+					<th><img src="img/item/Piece_Fana.png"/></th>
+					<td>파나조각 X 40</td>
+				</tr>
+				<tr>
+					<td>11500</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 30</td>
+				</tr>
+				<tr>
+					<td>13000</td>
+					<th><img src="img/item/쓰알열쇠.png"/></th>
+					<td>화려한 마음의 열쇠 X 8</td>
+				</tr>
+				<tr>
+					<td>15000</td>
+					<th><img src="img/item/마음상자2.png"/></th>
+					<td>영혼의 원소 X 4</td>
+				</tr>
+				<tr>
+					<td>17000</td>
+					<th>
+					<img src="img/item/쓰알비병.png"/>
+					<img src="img/item/쓰알궁병.png"/>
+					<img src="img/item/쓰알승병.png"/>
+					</th>
+					<td>
+					특급 비병 교재 X 10
+					</br>
+					특급 궁병 교재 X 10
+					</br>
+					특급 승병 교재 X 10
+					</td>
+				</tr>
+				<tr>
+					<td>19500</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 350,000</td>
+				</tr>
+				<tr>
+					<td>22000</td>
+					<th><img src="img/item/골드티켓.png"/></th>
+					<td>골드티켓 X 1</td>
+				</tr>
+				<tr>
+					<td>24500</td>
+					<th><img src="img/item/마음상자1.png"/></th>
+					<td>원주의 원소 X 3</td>
+				</tr>
+				<tr>
+					<td>27000</td>
+					<th><img src="img/item/마음.png"/></th>
+					<td>초연의 마음 X 3</td>
+				</tr>
+				<tr>
+					<td>30000</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 400,000</td>
+				</tr>
+				<tr>
+					<td>33000</td>
+					<th><img src="img/item/Piece_Fana.png"/></th>
+					<td>파나조각 X 50</td>
+				</tr>
+				<tr>
+					<td>36000</td>
+					<th><img src="img/item/쓰알투구.png"/></th>
+					<td>SSR 투구 X 1</td>
+				</tr>
+				<tr>
+					<td>39000</td>
+					<th><img src="img/item/마음.png"/></th>
+					<td>초연의 마음 X 3</td>
+				</tr>
+				<tr>
+					<td>42000</td>
+					<th><img src="img/item/마음상자1.png"/></th>
+					<td>원주의 원소 X 4</td>
+				</tr>
+				<tr>
+					<td>45000</td>
+					<th><img src="img/item/빨몬드.png"/></th>
+					<td>광휘미스릴 X 100</td>
+				</tr>
+				<tr>
+					<td>48000</td>
+					<th><img src="img/item/룬스톤.png"/></th>
+					<td>룬스톤 X 1</td>
+				</tr>
+				<tr>
+					<td>51500</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 40</td>
+				</tr>
+				<tr>
+					<td>55000</td>
+					<th><img src="img/item/쓰알상자.png"/></th>
+					<td>SSR 악세상자 X 1</td>
+				</tr>
+				<tr>
+					<td>58500</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 500,000</td>
+				</tr>
+				<tr>
+					<td>62000</td>
+					<th><img src="img/item/마음상자2.png"/></th>
+					<td>영혼의 원소 X 4</td>
+				</tr>
+				<tr>
+					<td>65500</td>
+					<th><img src="img/item/빨몬드.png"/></th>
+					<td>광휘미스릴 X 100</td>
+				</tr>
+				<tr>
+					<td>69000</td>
+					<th><img src="img/item/쓰알열쇠.png"/></th>
+					<td>화려한 마음의 열쇠 X 10</td>
+				</tr>
+				<tr>
+					<td>73000</td>
+					<th><img src="img/item/쓰알무기.png"/></th>
+					<td>SSR 무기 X 1</td>
+				</tr>
+				<tr>
+					<td>77000</td>
+					<th><img src="img/item/마음.png"/></th>
+					<td>초연의 마음 X 4</td>
+				</tr>
+				<tr>
+					<td>81000</td>
+					<th><img src="img/item/스킨권.png"/></th>
+					<td>스킨권 X 50</td>
+				</tr>
+				<tr>
+					<td>85000</td>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 650,000</td>
+				</tr>
+				<tr>
+					<td>90000</td>
+					<th><img src="img/item/크리스탈.png"/></th>
+					<td>크리스탈 X 50</td>
+				</tr>
+			</table>
+  
+  <button type="button" class="btn cancel" onclick="closeForm13()">Close</button>
+  </form>
+</div>
+<img class="filterDiv 이벤트 점수" onclick="openForm14()" src="img/banner/Picture_Linkage_01.png" width="100%"/>
+<img class="filterDiv 이벤트 교환" onclick="openForm15()" src="img/banner/Picture_Linkage_02.png" width="100%"/>
+<img class="filterDiv 이벤트 교환" onclick="openForm16()" src="img/banner/Picture_Notice_0906.png" width="100%"/>
+<img class="filterDiv 이벤트 교환" onclick="openForm17()" src="img/banner/Picture_Exchange_01.png" width="100%"/>
+<img class="filterDiv 사건" onclick="openForm18()" src="img/banner/Picture_Notice_0705.png" width="100%"/>
+<img class="filterDiv 이벤트 교환" onclick="openForm19()" src="img/banner/Picture_Notice_0806.png" width="100%"/>
+<img class="filterDiv 이벤트 점수" onclick="openForm20()" src="img/banner/Picture_ponit_01.png" width="100%"/>
+<img class="filterDiv 이벤트 점수" onclick="openForm21()" src="img/banner/Picture_ponit_02.png" width="100%"/>
+<img class="filterDiv 이벤트 점수" onclick="openForm22()" src="img/banner/Picture_ponit_03.png" width="100%"/>
+</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div id="footer-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<div id="copyright">
+									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+								</div>
+
+							</div>
+						</div>
+					
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/troop.js"></script>
+
+	</body>
+</html>
