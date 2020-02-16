@@ -234,12 +234,22 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 .bg_blue	{ background-color: #007eff;}
 .bg_yellow	{ background-color: #d19800;}
 .bg_purple	{ background-color: #7a3db9;}
-.bg_hp	{ background-color: #ABF200;}
-.bg_atk	{ background-color: #FFD8D8;}
-.bg_matk	{ background-color: #D4F4FA;}
-.bg_def	{ background-color: #FAECC5;}
-.bg_mdef	{ background-color: #CEFBC9;}
-.bg_cri	{ background-color: #A566FF;}
+.bg_hp	{ background-color: #1DDB16;}
+.bg_atk	{ background-color: #FF0000;}
+.bg_matk	{ background-color: #0100FF;}
+.bg_def	{ background-color: #FFA7A7;}
+.bg_mdef	{ background-color: #6B66FF;}
+.bg_cri	{ background-color: #990085;}
+.col_white	{ color: #fff;}
+.col_red	{ color: #ff0000;}
+.col_orange	{ color: #ff6000;}
+.col_pink	{ color: #ff7878;}
+.col_blue	{ color: #007eff;}
+.col_sky	{ color: #41acff;}
+.col_green	{ color: #2ed95a;}
+.col_yellow { color: #d19800;}
+.col_purple { color: #7a3db9;}
+.col_olive	{ color: #4e9100;}
 /* Row */
 
 	.row {
