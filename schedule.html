@@ -10,7 +10,8 @@
 		<link rel="icon" type="image/png" href="favicon.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    	<link rel="stylesheet" href="assets/css/main.css"/>	
+    	<link rel="stylesheet" href="assets/css/main2.css"/>	
+		<link rel="stylesheet" href="assets/css/troop.css" />
 		
 	</head>
 	<body>
@@ -25,7 +26,7 @@
 										<a href="index.html">메인</a>
 										<a href="hero.html">영웅</a>
 										<a href="troop.html">용병</a>
-										<a href="schedule.html" class="current-page-item">스케쥴</a>
+										<a href="https://docs.google.com/spreadsheets/d/1RdQWMqvq-Da_9fCVR3zo3bMwrcW6PDoKFB5wHWW6Mgk/edit?usp=sharing" target="_blank">배너표</a>
 										<div class="dropdown">
 										  <button onclick="myFunction()" class="dropbtn">비경&이벤트</button>
 										  <div id="myDropdown" class="dropdown-content">
@@ -44,393 +45,425 @@
 	<div id="main">
 					<div class="container">
 						<div class="row main-row">
-									<div class="col-3 col-12-medium">
-			<section>
-			<h2>레이드</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
-					<colgroup>
-						<col width="25%">
-						<col width="*">
-					</colgroup>
-					<tr>
-						<th>니드호그</th>
-					</tr>
-					<tr>
-						<td>3월 18일 ~ 3월 23일</td>
-					</tr>
-					<tr>
-						<th>펜릴</th>
-					</tr>
-					<tr>
-						<td>3월 24일 ~ 3월 29일</td>
-					</tr><tr>
-						<th>슬레이프니르</th>
-					</tr>
-					<tr>
-						<td>3월 30일 ~ 4월 4일</td>
-					</tr><tr>
-						<th>요르문간드</th>
-					</tr>
-					<tr>
-						<td>4월 5일 ~ 4월 10일</td>
-					</tr><tr>
-						<th>후긴무닌</th>
-					</tr>
-					<tr>
-						<td>4월 11일 ~ 4월 16일</td>
-					</tr>
-			</table>
-			</section>
-			</div>
-							<div class="col-9 col-12-medium">
+							<section>
+						<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">모두 보기</button>
+  <button class="btn" onclick="filterSelection('E1')">클라렛,엘라스타</button>
+  <button class="btn" onclick="filterSelection('E2')">오메가,유리아</button>
+  <button class="btn" onclick="filterSelection('E3')">유유백서 콜라보</button>
+  <button class="btn" onclick="filterSelection('E4')">레인폴스,베티</button>
+  <button class="btn" onclick="filterSelection('E5')">여신의화신,에밀리아</button>
+  <button class="btn" onclick="filterSelection('E6')">미지의기사,비라쥬</button>
+  <button class="btn" onclick="filterSelection('E7')">아카야,브렌다</button>
+  <button class="btn" onclick="filterSelection('E8')">로도스도전기 콜라보</button>
+  <button class="btn" onclick="filterSelection('E9')">아레스,마이야</button>
+  <button class="btn" onclick="filterSelection('E10')">일루시아,실린카</button>
+</div>
+							</section>		
+							<div class="col-12">
 
 							<section>
-			<h2>신규:클라렛,엘라스타</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
-					<colgroup>
-						<col width="25%">
+			<table class="filterDiv E1" border="0" cellpadding="0" cellspacing="1">
+			<colgroup>
+						<col width="30%">
 						<col width="*">
 					</colgroup>
 					<tr>
-						<th colspan="2">메인 이벤트</th>
+						<th colspan="2">신규 : 클라렛, 엘라스타</th>
 					</tr>
 					<tr>
-						<td colspan="2"><img src="img/banner/Picture_Notice_1006.png" width="100%"/></td>
+						<td><h2>업데이트</h2></th>
+						<td><h1>빛의 메아리</h1>
+						신규 : 클라렛, 엘라스타
+						<br>기존 : 사쿠라, 스미레, 윌러, 엘윈
+						<h1>전용장비</h1>
+						셀파닐, 키리카제
+						<h1>형귀스킨</h1>
+						젤다
+						</td>
 					</tr>
 					<tr>
-						<th>2월 19일</th>
-						<td><img src="img/banner/Picture_Notice_1001.png" width="100%"/></br>
-						<img src="img/banner/Picture_Notice_1004.png" width="100%"/></td>
+						<td><h2>이벤트배너</h2></th>
+						<td><img src="img/banner/Picture_Notice_1006.png" width="100%"/></td>
 					</tr>
 					<tr>
-						<th>2월 26일</th>
-						<td><img src="img/banner/Picture_Notice_1002.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>3월 4일</th>
-						<td><img src="img/banner/Picture_Notice_1003.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>3월 11일</th>
-						<td><img src="img/banner/Picture_Notice_0802.png" width="100%"/></br>
-						<img src="img/banner/Picture_Notice_0905.png" width="100%"/></td>
-					</tr>
-			</table>
-			</section>
-							<section>
-			<h2>신규:오메가,유리아</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
-					<colgroup>
-						<col width="25%">
-						<col width="*">
-					</colgroup>
-					<tr>
-						<th colspan="2">메인 이벤트</th>
-					</tr>
-					<tr>
-						<td colspan="2"><img src="img/banner/Picture_Notice_1106.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>3월 18일</th>
-						<td><img src="img/banner/Picture_Notice_1101.png" width="100%"/></br>
-						<img src="img/banner/Picture_Notice_1104.png" width="100%"/></br>
-						<img src="img/banner/Picture_Notice_HD01.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>3월 25일</th>
-						<td><img src="img/banner/Picture_Notice_1102.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>4월 1일</th>
-						<td><img src="img/banner/Picture_Notice_1103.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>4월 8일</th>
-						<td>기존 2인 or 3인 뽑기<br>
+						<td><h2>배너</h2>
+						<td><img src="img/banner/Picture_Notice_1001.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1002.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1003.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1004.png" width="100%"/>
 						<img src="img/banner/Picture_Notice_1005.png" width="100%"/></td>
 					</tr>
 			</table>
 			</section>
 							<section>
-			<h2>신규:유유백서 콜라보</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
+			<table class="filterDiv E2" border="0" cellpadding="0" cellspacing="1">
 					<colgroup>
-						<col width="25%">
+						<col width="30%">
 						<col width="*">
 					</colgroup>
 					<tr>
-						<th colspan="2">메인 이벤트</th>
+						<th colspan="2">신규 : 오메가, 유리아</th>
 					</tr>
 					<tr>
-						<td colspan="2"><img src="img/banner/Picture_Notice_1206.png" width="100%"/></td>
+						<td><h2>업데이트</h2></th>
+						<td><h1>빛의 메아리</h1>
+						신규 : 오메가, 유리아
+						<br>기존 : 클라렛, 엘라스타, 레온, 엘윈	
+						<h1>전용장비</h1>
+						란포드, 프레아
+						<h1>시스템</h1>
+						태고의 부름(레이드) 추가
+						<h1>형귀스킨</h1>
+						쥬그라
+						</td>
 					</tr>
 					<tr>
-						<th>4월 15일</th>
-						<td><img src="img/banner/Picture_Notice_1201.png" width="100%"/></br>
-						<img src="img/banner/Picture_Notice_1204.png" width="100%"/></td>
+						<td><h2>이벤트배너</h2></th>
+						<td><img src="img/banner/Picture_Notice_1106.png" width="100%"/></td>
 					</tr>
 					<tr>
-						<th>4월 22일</th>
-						<td><img src="img/banner/Picture_Notice_1203.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>4월 29일</th>
-						<td><img src="img/banner/Picture_Notice_1202.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>5월 6일</th>
-						<td>기존 2인 or 3인 뽑기<br>
-						<img src="img/banner/Picture_Notice_1105.png" width="100%"/></td>
+						<td><h2>배너</h2>
+						<td><img src="img/banner/Picture_Notice_1101.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1102.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1103.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1104.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1105.png" width="100%"/>
+						</td>
 					</tr>
 			</table>
 			</section>
 							<section>
-			<h2>신규:레인폴스,베티</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
+			<table class="filterDiv E3" border="0" cellpadding="0" cellspacing="1">
 					<colgroup>
-						<col width="25%">
+						<col width="30%">
 						<col width="*">
 					</colgroup>
 					<tr>
-						<th colspan="2">메인 이벤트</th>
+						<th colspan="2">신규 : 유유백서 콜라보</th>
 					</tr>
 					<tr>
-						<td colspan="2"><img src="img/banner/Picture_Notice_1308.png" width="100%"/></td>
+						<td><h2>업데이트</h2></th>
+						<td><h1>빛의 메아리</h1>
+						신규 : 유스케, 쿠라마
+						<br>기존 : 오메가, 유리아, 클라렛, 엘라스타
+						<h1>전용장비</h1>
+						레딘, 아멜다
+						<h1>시스템</h1>
+						협력전 65레벨 추가
+						<br>시나리오 48~50장 추가
+						<br>시공 시나리오 12장
+						<h1>형귀스킨</h1>
+						란포드
+						</td>
 					</tr>
 					<tr>
-						<th>5월 13일</th>
-						<td><img src="img/banner/Picture_Notice_1301.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1306.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_HD01.png" width="100%"/></td>
+						<td><h2>이벤트배너</h2></th>
+						<td><img src="img/banner/Picture_Notice_1206.png" width="100%"/></td>
 					</tr>
 					<tr>
-						<th>5월 20일</th>
-						<td><img src="img/banner/Picture_Notice_1303.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>5월 27일</th>
-						<td><img src="img/banner/Picture_Notice_1302.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1305.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>6월 3일</th>
-						<td><img src="img/banner/Picture_Notice_1304.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1205.png" width="100%"/></td>
+						<td><h2>배너</h2>
+						<td><img src="img/banner/Picture_Notice_1201.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1202.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1203.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1204.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1205.png" width="100%"/>
+						</td>
 					</tr>
 			</table>
 			</section>
 							<section>
-			<h2>신규:여신의화신,에밀리아</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
+			<table class="filterDiv E4" border="0" cellpadding="0" cellspacing="1">
 					<colgroup>
-						<col width="25%">
+						<col width="30%">
 						<col width="*">
 					</colgroup>
 					<tr>
-						<th colspan="2">메인 이벤트</th>
+						<th colspan="2">신규 : 레인폴스, 베티</th>
 					</tr>
 					<tr>
-						<td colspan="2"><img src="img/banner/Picture_Notice_1407.png" width="100%"/></td>
+						<td><h2>업데이트</h2></th>
+						<td><h1>빛의 메아리</h1>
+						신규 : 레인폴스, 베티
+						<br>기존 : 안젤리나, 셀파닐, 젤다, 라나
+						<h1>전용장비</h1>
+						안젤리나, 에그베르트
+						<h1>시스템</h1>
+						70렙 형귀헬스장
+						<br>65레벨 특수훈련실
+						<br>신규 병종 1차 6종 추가
+						<br>만레벨 1주단위 2레벨 확장
+						<h1>형귀스킨</h1>
+						엘라스타
+						</td>
 					</tr>
 					<tr>
-					<th>6월 10일</th>
-						<td><img src="img/banner/Picture_Notice_1401.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1405.png" width="100%"/></td>
+						<td><h2>이벤트배너</h2></th>
+						<td><img src="img/banner/Picture_Notice_1308.png" width="100%"/></td>
 					</tr>
 					<tr>
-						<th>6월 17일</th>
-						<td><img src="img/banner/Picture_Notice_1402.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>6월 24일</th>
-						<td><img src="img/banner/Picture_Notice_1403.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>7월 1일</th>
-						<td><img src="img/banner/Picture_Notice_1404.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1307.png" width="100%"/></td>
+						<td><h2>배너</h2>
+						<td><img src="img/banner/Picture_Notice_1301.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1302.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1303.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1304.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1305.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1306.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1307.png" width="100%"/>
+						</td>
 					</tr>
 			</table>
 			</section>
 							<section>
-			<h2>신규:미지의기사, 비라쥬</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
+			<table class="filterDiv E5" border="0" cellpadding="0" cellspacing="1">
 					<colgroup>
-						<col width="25%">
+						<col width="30%">
 						<col width="*">
 					</colgroup>
 					<tr>
-						<th colspan="2">메인 이벤트</th>
+						<th colspan="2">신규 : 여신의화신, 에밀리아</th>
 					</tr>
 					<tr>
-						<td colspan="2"><img src="img/banner/Picture_Notice_1507.png" width="100%"/><br>
+						<td><h2>업데이트</h2></th>
+						<td><h1>빛의 메아리</h1>
+						신규 : 여신의화신, 에밀리아
+						<br>기존 : 레인폴스, 베티, 란포드, 리스틸
+						<h1>전용장비</h1>
+						젤다, 페라키아
+						<h1>시스템</h1>
+						시공 시나리오 13장
+						<br>신규 병종 2차 6종 추가
+						<br>비경 영원의신전 70레벨
+						<br>유대의 땅 70레벨
+						<h1>각성</h1>
+						루나, 매튜, 레이첼, 제리올&레이라
+						<h1>형귀스킨</h1>
+						람다
+						</td>
+					</tr>
+					<tr>
+						<td><h2>이벤트배너</h2></th>
+						<td><img src="img/banner/Picture_Notice_1407.png" width="100%"/></td>
+					</tr>
+					<tr>
+						<td><h2>배너</h2>
+						<td><img src="img/banner/Picture_Notice_1401.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1402.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1403.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1404.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1405.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1406.png" width="100%"/>
+						</td>
+					</tr>
+			</table>
+			</section>
+							<section>
+			<table class="filterDiv E6" border="0" cellpadding="0" cellspacing="1">
+					<colgroup>
+						<col width="30%">
+						<col width="*">
+					</colgroup>
+					<tr>
+						<th colspan="2">신규 : 미지의기사, 비라쥬</th>
+					</tr>
+					<tr>
+						<td><h2>업데이트</h2></th>
+						<td><h1>빛의 메아리</h1>
+						신규 : 미지의기사, 비라쥬
+						<br>기존 : 여신의화신, 에밀리아, 란디우스, 레이첼
+						<h1>전용장비</h1>
+						람다, 실버울프
+						<h1>각성</h1>
+						레온 , 쉐리, 에스텔, 크리스
+						<h1>형귀스킨</h1>
+						시그마
+						</td>
+					</tr>
+					<tr>
+						<td><h2>이벤트배너</h2></th>
+						<td><img src="img/banner/Picture_Notice_1507.png" width="100%"/>
 						<img src="img/banner/Picture_Notice_1506.png" width="100%"/></td>
 					</tr>
 					<tr>
-						<th>7월 8일</th>
-						<td><img src="img/banner/Picture_Notice_1501.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1504.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>7월 15일</th>
-						<td><img src="img/banner/Picture_Notice_1502.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>7월 22일</th>
-						<td><img src="img/banner/Picture_Notice_0501.png" width="100%"/><br>
-						<img src="img/banner/Picture_Linkage_01.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>7월 29일</th>
-						<td><img src="img/banner/Picture_Notice_1503.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1406.png" width="100%"/></td>
+						<td><h2>배너</h2>
+						<td><img src="img/banner/Picture_Notice_1501.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1502.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1503.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1504.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1505.png" width="100%"/>
+						</td>
 					</tr>
 			</table>
+			
 			</section>
 							<section>
-			<h2>신규:아카야, 브렌다</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
+			
+			<table class="filterDiv E7" border="0" cellpadding="0" cellspacing="1">
 					<colgroup>
-						<col width="25%">
+						<col width="30%">
 						<col width="*">
 					</colgroup>
 					<tr>
-						<th colspan="2">메인 이벤트</th>
+						<th colspan="2">신규 : 아카야, 브렌다</th>
 					</tr>
 					<tr>
-						<td colspan="2"><img src="img/banner/Picture_Notice_1605.png" width="100%"/></td>
+						<td><h2>업데이트</h2></th>
+						<td><h1>빛의 메아리</h1>
+						신규 : 아카야, 브렌다
+						<br>기존 : 미지의기사, 비라쥬, 시그마, 람다
+						<h1>전용장비</h1>
+						엘라스타, 그레니어
+						<h1>시스템</h1>
+						메인시나리오2부 6~10장
+						<h1>각성</h1>
+						윌러, 스미레, 소니아
+						<h1>형귀스킨</h1>
+						클라렛
+						</td>
 					</tr>
 					<tr>
-						<th>8월 5일</th>
-						<td><img src="img/banner/Picture_Notice_1601.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1603.png" width="100%"/></td>
+						<td><h2>이벤트배너</h2></th>
+						<td><img src="img/banner/Picture_Notice_1605.png" width="100%"/></td>
 					</tr>
 					<tr>
-						<th>8월 12일</th>
-						<td><img src="img/banner/Picture_Notice_1102.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>8월 19일</th>
-						<td><img src="img/banner/Picture_Notice_0601.png" width="100%"/><br>
-						<img src="img/banner/Picture_Linkage_02.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>8월 26일</th>
-						<td><img src="img/banner/Picture_Notice_1602.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1505.png" width="100%"/></td>
+						<td><h2>배너</h2>
+						<td><img src="img/banner/Picture_Notice_1601.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1602.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1603.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1604.png" width="100%"/>
+						</td>
 					</tr>
 			</table>
+			
 			</section>
 							<section>
-			<h2>신규:로도스전기 콜라보</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
+			<table class="filterDiv E8" border="0" cellpadding="0" cellspacing="1">
 					<colgroup>
-						<col width="25%">
+						<col width="30%">
 						<col width="*">
 					</colgroup>
 					<tr>
-						<th colspan="2">메인 이벤트</th>
+						<th colspan="2">신규 : 로도스도전기 콜라보</th>
 					</tr>
 					<tr>
-						<td colspan="2"><img src="img/banner/Picture_Notice_1708.png" width="100%"/></td>
+						<td><h2>업데이트</h2></th>
+						<td><h1>빛의 메아리</h1>
+						신규 : 디드리트, 판
+						<br>기존 : 아카야, 브렌다, 윌러, 엘윈
+						<h1>전용장비</h1>
+						레온, 란스
+						<h1>시스템</h1>
+						시공의 균열 14장
+						<h1>각성</h1>
+						쥬그라, 란디우스, 안젤리나, 유스케, 리파니
+						<h1>형귀스킨</h1>
+						기자로프
+						</td>
 					</tr>
 					<tr>
-						<th>9월 2일</th>
-						<td><img src="img/banner/Picture_Notice_1701.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1706.png" width="100%"/></td>
+						<td><h2>이벤트배너</h2></th>
+						<td><img src="img/banner/Picture_Notice_1708.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1709.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1710.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1711.png" width="100%"/></td>
 					</tr>
 					<tr>
-						<th>9월 9일</th>
-						<td><img src="img/banner/Picture_Notice_1702.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>9월 16일</th>
-						<td><img src="img/banner/Picture_Notice_1703.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1705.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>9월 23일</th>
-						<td><img src="img/banner/Picture_Notice_1704.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1604.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_HD01.png" width="100%"/></td>
+						<td><h2>배너</h2>
+						<td><img src="img/banner/Picture_Notice_1701.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1702.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1703.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1704.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1705.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1706.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1707.png" width="100%"/>
+						</td>
 					</tr>
 			</table>
+			
 			</section>
 							<section>
-			<h2>신규:아레스,마이야</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
+			<table class="filterDiv E9" border="0" cellpadding="0" cellspacing="1">
 					<colgroup>
-						<col width="25%">
+						<col width="30%">
 						<col width="*">
 					</colgroup>
 					<tr>
-						<th colspan="2">메인 이벤트</th>
+						<th colspan="2">신규: 아레스, 마이야</th>
 					</tr>
 					<tr>
-						<td colspan="2"><img src="img/banner/Picture_Notice_1806.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1808.png" width="100%"/></td>
+						<td><h2>업데이트</h2></th>
+						<td><h1>빛의 메아리</h1>
+						신규 : 아레스, 마이야
+						<br>기존 : 클라렛, 엘라스타, 오메가, 유리아
+						<h1>전용장비</h1>
+						기자로프, 세레나
+						<h1>각성</h1>
+						아레스, 마이야, 레딘, 렌, 헤인
+						<h1>형귀스킨</h1>
+						베티
+						</td>
 					</tr>
 					<tr>
-						<th>9월 30일</th>
-						<td><img src="img/banner/Picture_Notice_1801.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1804.png" width="100%"/></td>
+						<td><h2>이벤트배너</h2></th>
+						<td><img src="img/banner/Picture_Notice_1806.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1807.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1808.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1809.png" width="100%"/></td>
 					</tr>
 					<tr>
-						<th>10월 7일</th>
-						<td><img src="img/banner/Picture_Notice_1803.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>10월 14일</th>
-						<td><img src="img/banner/Picture_Notice_1802.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>10월 21일</th>
-						<td><img src="img/banner/Picture_Notice_1304.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1707.png" width="100%"/></td>
+						<td><h2>배너</h2>
+						<td><img src="img/banner/Picture_Notice_1801.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1802.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1803.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1804.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1805.png" width="100%"/>
+						</td>
 					</tr>
 			</table>
+			
 			</section>
 							<section>
-			<h2>신규:일루시아, 실린카</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
+			
+			<table class="filterDiv E10" border="0" cellpadding="0" cellspacing="1">
 					<colgroup>
-						<col width="25%">
+						<col width="30%">
 						<col width="*">
 					</colgroup>
 					<tr>
-						<th colspan="2">메인 이벤트</th>
+						<th colspan="2">신규: 일루시아, 실린카</th>
 					</tr>
 					<tr>
-						<td colspan="2"><img src="img/banner/Picture_Notice_1908.png" width="100%"/></a></td>
+						<td><h2>업데이트</h2></th>
+						<td><h1>빛의 메아리</h1>
+						신규 : 일루시아, 실린카
+						<br>기존 : 아레스, 마이야, 레인폴스, 베티
+						<h1>전용장비</h1>
+						여신의화신, 안젤리카
+						<h1>각성</h1>
+						일루시아, 실린카, 라나, 디하르트, 카즈마
+						<h1>형귀스킨</h1>
+						윌러
+						</td>
 					</tr>
 					<tr>
-						<th>10월 28일</th>
-						<td><img src="img/banner/Picture_Notice_1901.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1906.png" width="100%"/></td>
+						<td><h2>이벤트배너</h2></th>
+						<td><img src="img/banner/Picture_Notice_1908.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1909.png" width="100%"/></td>
 					</tr>
 					<tr>
-						<th>11월 4일</th>
-						<td><img src="img/banner/Picture_Notice_1909.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1903.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1904.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1905.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>11월 11일</th>
-						<td><img src="img/banner/Picture_Notice_1902.png" width="100%"/></td>
-					</tr>
-					<tr>
-						<th>11월 18일</th>
-						<td><img src="img/banner/Picture_Notice_1404.png" width="100%"/><br>
-						<img src="img/banner/Picture_Notice_1805.png" width="100%"/></td>
+						<td><h2>배너</h2>
+						<td><img src="img/banner/Picture_Notice_1901.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1902.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1903.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1904.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1905.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1906.png" width="100%"/>
+						<img src="img/banner/Picture_Notice_1907.png" width="100%"/>
+						</td>
 					</tr>
 			</table>
 			</section>
-							<section>
-			<h2>미확정 이벤트</h2>
-			<table border="0" cellpadding="0" cellspacing="1">
-			</table>
-			</section>
+
 			</div>
 			</div>
 			</div>
@@ -441,8 +474,9 @@
 							<div class="col-12">
 
 								<div id="copyright">
-									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
-								</div>
+								 본 사이트는 '랑그릿사'의 데이터를 기반으로 작성되었으며, 그에 관련한 모든 저작권, 권리는 
+								 <BR>&copy;<a href="https://zlongame.com/">Zilong Game Limited</a>, &copy;extreme, &copy;X.D. global에 귀속되어있습니다.
+								<br>	&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
 
 							</div>
 						</div>
@@ -458,6 +492,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/troop.js"></script>
 
 	</body>
 </html>
