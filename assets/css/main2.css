@@ -202,6 +202,7 @@ input, select, textarea {
 
 		}
 		div.container table { position: relative; background: #a5bde7; width: 100%; }
+		
 div.container table td, div.container table th { text-align: center; height: 31px;}
 div.container table th { color: #fff; background: #516787;}
 div.container table td { color: #333; background: #f8f8f8;}
