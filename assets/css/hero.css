@@ -12,7 +12,7 @@
 
 /* Style the buttons */
 .btn {
-
+	border: none;
   outline: none;
   padding: 10px 10px ;
   background-color: #f1f1f1;
