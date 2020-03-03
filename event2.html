@@ -49,7 +49,89 @@
 				<section>
 				<div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')">모두 보기</button>
-  <button class="btn" onclick="filterSelection('레이드')">레이드</button>
+  <button class="btn" onclick="filterSelection('레이드')">태고의 부름</button>
+</div>
+				</section>
+				<section>
+				<img class="filterDiv 레이드" style="cursor:pointer;" onclick="openForm6()" src="img/banner/Challenge_002.png" />
+
+				<div class="chat-popup" id="myForm6">
+				  <form class="form-container">
+
+				<button type="button" class="btn cancel" onclick="closeForm6()">Close</button>
+					<div class="view_title"><font color=#008B00>◆'태고의 부름' 설명◆</font></div>
+							<table border="0" cellpadding="0" cellspacing="1">
+					<tr>
+					<td>'태고의 부름'에서는 <font color=#DC143C>태고의 야수</font>에게 도전할 수 있습니다. 
+					<br>태고의 야수는 <font color=#DC143C>격퇴할 수 없습니다</font>. 
+					<br>자신의 진영이 전멸하기 전에 <font color=#DC143C>되도록 많은 피해</font>를 주고
+					<br><font color=#DC143C>높은 평가</font>를 획득하세요.
+					</tr>
+				</table>
+			<div class="view_title"><font color=#008B00>◆전장 주기◆</font></div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<tr>
+					<td>이벤트 기간은 <font color=#DC143C>30일</font>입니다.
+					<br>이벤트 1회당 <font color=#DC143C>5마리</font>의 태고의 야수가 출현합니다.
+					<br>태고의 야수 1마리가 출현하는 기간은 <font color=#DC143C>6일</font>이며,
+					<br><font color=#DC143C>1마리씩 순서대로 개방됩니다</font>.
+				</tr>
+			</table>
+			<div class="view_title"><font color=#008B00>◆전투 규칙◆</font></div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<tr>
+					<td>태고의 야수는 <font color=#DC143C>격퇴할 수 없습니다</font>.
+					<br>모든 태고의 야수는 <font color=#DC143C>단계별</font> 상태가 있습니다.
+					<br>한 단계에서 생명이 0이 되면 다음 단계로 진입하며 <font color=#DC143C>단계를 거칠 때마다 난폭하게 변화</font>합니다.
+					<br>지휘관은 <font color=#DC143C>자신의 영웅 진영이 전멸하기 전에</font>
+					<br>최대한 <font color=#DC143C>많은 피해</font>를 주어야 합니다.
+				</tr>
+			</table>
+			<div class="view_title"><font color=#008B00>◆우세 진영◆</font></div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<tr>
+					<td>모든 <font color=#DC143C>태고의 야수</font> 전장에는 우세 진영이 있습니다.
+					<br>해당 진영의 영웅을 출격시킬 경우, <font color=#DC143C>모든 속성 +100%</font> 효과를 얻습니다.
+					<br>이 효과는 <font color=#DC143C>초절강화 효과와 중첩할 수 없습니다</font>.
+					<br>니드호그 - 우세 진영: <font color=#DC143C>공주 연맹, 전설의 저편</font>
+					<br>펜리르 - 우세 진영: <font color=#DC143C>어둠의 윤회, 초월 영역</font>
+					<br>슬레이프니르 - 우세 진영: <font color=#DC143C>제국의 빛, 전략의 대가</font>
+					<br>요르문간드 - 우세 진영: <font color=#DC143C>빛의 기원, 메테오 스트라이크</font>
+					<br>후긴과 무닌 - 우세 진영: <font color=#DC143C>시대의 주역, 빛의 군단</font>					
+				</tr>
+			</table>
+			<div class="view_title"><font color=#008B00>◆랭킹 보상◆</font></div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<tr>
+					<td>각 전장에는 <font color=#DC143C>랭킹</font>이 있습니다.
+					<br><font color=#DC143C>랭킹</font>은 각 지휘관의 <font color=#DC143C>최대 피해량</font>에 따라 결정되며,
+					<br>랭킹이 높은 지휘관은 획득 <font color=#DC143C>포인트</font>도 많아집니다.
+					<br>랭킹은 30일에 1번 초기화됩니다.
+					<br>이벤트 기간 동안 <font color=#DC143C>각 전장에서 얻은 성적 합계</font>는
+					<br>전체 랭킹에 표시되며,순위가 매겨집니다.
+					<br><font color=#DC143C>해당 랭킹에 따라</font> 보상이 지급됩니다.
+				</tr>
+			</table>
+			<div class="view_title"><font color=#008B00>◆보상 설명◆</font></div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<tr>
+					<td>다른 전장과는 달리 <font color=#DC143C>1회 전투 보상은 없습니다.</font>
+					<br>또한 <font color=#DC143C>체력도 소모되지 않습니다.</font>
+					<br>'태고의 부름' 보상은 <font color=#DC143C>기간 정산</font> 형태로 지급되며 보상은 다음과 같습니다:
+					<br>-<color=#008B00>업적 보상</font>-
+					<br>각 전장에는 <font color=#DC143C>지정 조건 목록</font>이 있습니다.
+					<br>유저가 전투 중에 조건을 달성하면 <font color=#DC143C>업적 보상</font>을 획득할 수 있습니다.
+					<br>-<color=#008B00>6일 보상</font>-
+					<br>각 전장이 개방되는 <font color=#DC143C>6일</font> 동안 지휘관의 <font color=#DC143C>6일 간의 최대 피해량</font>을 산출해 그에 따른 <font color=#DC143C>평가</font>가 내려지며,
+					<br>우편함으로 <font color=#DC143C>해당 평가에 따른 보상</font>이 지급됩니다.
+					<br>정산 후, 산출된 최대 피해량 및 평가는 <font color=#DC143C>30일간</font> 저장되며 30일 후 초기화됩니다.
+					<br>평가는 매 6일 <font color=#DC143C>0시</font>에 정산되며 0시 이후 입힌 피해는 포함되지 않습니다.
+					<br>이전 도전을 포기할 시 이번 도전 결과는 기록되지 않습니다. 유의하시기 바랍니다.
+				</tr>
+			</table>
+			<br>
+  <button type="button" class="btn cancel" onclick="closeForm6()">Close</button>
+  </form>
 </div>
 				</section>
 				<section>
