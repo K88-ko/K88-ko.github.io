@@ -51,6 +51,7 @@
   <button class="btn active" onclick="filterSelection('all')">모두 보기</button>
   <button class="btn" onclick="filterSelection('레이드')">태고의 부름</button>
   <button class="btn" onclick="filterSelection('영겁의신전')">영겁의 신전</button>
+  <button class="btn" onclick="filterSelection('봉인된전장')">봉인된 전장</button>
 </div>
 				</section>
 				<section>
@@ -3764,6 +3765,648 @@
   </form>
 </div>
 				</section>
+				<section>
+				<img class="filterDiv 봉인된전장" style="cursor:pointer;" onclick="openForm12()" src="img/banner/TimeLimit_SealZone.png" width=100%/>
+
+				<div class="chat-popup" id="myForm12">
+				  <form class="form-container">
+
+				<button type="button" class="btn cancel" onclick="closeForm12()">Close</button>
+					<div class="view_title"><font color=#008B00>◆'봉인된 전장' 설명(의역임)◆</font></div>
+							<table border="0" cellpadding="0" cellspacing="1">
+					<tr>
+					<td>★두개의 달이 다가오고, 정지되었던 조류의 흐름으로 인하여 <font color=#DC143C>'봉인된 전장'</font>이 등장하였습니다.
+					<br>★<font color=#DC143C>'봉인된 전장'</font>은 4개 구역으로 나뉘어있으며, 매주 1개의 구역씩 순차적으로 오픈됩니다.
+					<br>★<font color=#DC143C>'봉인된 전장'</font>은 체력이 소모되지 않고, 도전 횟수에 제한이 없습니다.
+					<br>이벤트가 열리는 기간동안에만 도전 할 수 있습니다.
+					<br>★<font color=#DC143C>각 레벨마다 초회 보상이 존재합니다.</font>
+					<br>★다음 레벨을 도전 하려면 이전 레벨을 통과하여야 합니다.
+					<br>★두개의 달의 조류의 힘으로 인하여 전장의 적군과 아군의 힘이 평소보다 강력합니다.
+					<br>★일부 전장 레벨에는 특수 도전 과제가 있으며, 플레이어는 레벨을 클리어 하고 도전 과제를 완료하면 특별한 보상을 받을수 있습니다.
+					<br>★<font color=#DC143C>'고대 금화'</font>를 사용하여 '봉인 상점'내의 특별한 물품과 교환이 가능합니다.
+					</tr>
+				</table>
+				<div class="view_title"><font color=#008B00>◆'봉인된 전장' 고대 금화 보상◆</font></div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<colgroup>
+					<col width="50%">
+					<col width="50%">
+				</colgroup>
+				<tr>
+					<th>레벨</th>
+					<td><img src="img/item/Item_AncientGold.png"/></td>
+				</tr>
+				<tr>
+					<th>30레벨</th>
+					<td>100</td>
+				</tr>
+				<tr>
+					<th>40레벨</th>
+					<td>150</td>
+				</tr>
+				<tr>
+					<th>50레벨</th>
+					<td>200</td>
+				</tr>
+				<tr>
+					<th>60레벨</th>
+					<td>250</td>
+				</tr>
+				<tr>
+					<th>70레벨</th>
+					<td>300</td>
+				</tr>
+			</table>
+				<div class="view_title"><font color=#008B00>◆'봉인된 전장' 적군 스킬들 예시 더많이있음..◆</font></div>
+				<table border="0" cellpadding="0" cellspacing="1">
+					<colgroup>
+						<col width="25%">
+						<col width="25%">
+						<col width="25%">
+						<col width="25%">
+					</colgroup>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">대기</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_Charge.png" width="100px" /></th>
+						<td colspan="3">[패시브]행동종료시,만약 공격을 하지않았다면 공격 및 기술사거리<font color=#DC143C>+3</font>, <font color=#DC143C>1</font>턴 지속.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">죽음의 표식</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_Nature.png" width="100px" /></th>
+						<td colspan="3">[패시브]행동종료시 <font color=#DC143C>2</font>명의 적군에게 '치료를 받을수 없음'부여, <font color=#DC143C>1</font>턴 지속.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">관통</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_Parry.png" width="100px" /></th>
+						<td colspan="3">[패시브]공격하여 전투 진입전 적에게 1회 고정피해, 피해량은 공격의 <font color=#DC143C>0.5</font>배.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">쾌속전법</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_SpeedUp2.png" width="100px" /></th>
+						<td colspan="3">[패시브]행동종료후 <font color=#DC143C>3</font>칸내 모든 아군에게 '이동력 <font color=#DC143C>+2</font> 부여', <font color=#DC143C>2</font>턴 지속.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">수호결계</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Passive_Guard.png" width="100px" /></th>
+						<td colspan="3">[패시브]주변 <font color=#DC143C>3</font>칸내 모든 아군이 받는 물리공격을 대신하여 받는다.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">봉쇄전법</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_ChainHook.png" width="100px" /></th>
+						<td colspan="3">[패시브]주변 <font color=#DC143C>2</font>칸내 모든 적군의 이동력 <font color=#DC143C>-2</font>, 호위불가</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">신속</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_SpeedUp1.png" width="100px" /></th>
+						<td colspan="3">[패시브]행동종료시, 공격을 하지 않았다면 '이동력<font color=#DC143C>+3</font>, <font color=#DC143C>1</font>턴 지속.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">자가 치유</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_Heal.png" width="100px" /></th>
+						<td colspan="3">[패시브]피해를 입인후, 피해량의 <font color=#DC143C>100%</font>만큼 생명 회복.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">선제 공격</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_Jormun3.png" width="100px" /></th>
+						<td colspan="3">[패시브]공격하여 전투진입시, 적군 반격 불가.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">축복의 오라</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Gift_Present.png" width="100px" /></th>
+						<td colspan="3">[패시브]행동종료시 <font color=#DC143C>3</font>칸내 아군의 <font color=#DC143C>2</font>개 약화버프 제거 및
+						<br><font color=#DC143C>3</font>칸내 아군의 모든디버프 면역 상태.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">신앙결계</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_Kizuna2.png" width="100px" /></th>
+						<td colspan="3">[패시브]부대의 생명이 <font color=#DC143C>90%</font>이상일때 받는 피해 감소<font color=#DC143C>-50%</font>.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">조준전법</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_Kizuna1.png" width="100px" /></th>
+						<td colspan="3">[패시브]보병, 창병, 기병과 전투시 지력 <font color=#DC143C>+10%</font>, 방어 및 마방 <font color=#DC143C>+50%</font>.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">공간마법</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_DarkHole.png" width="100px" /></th>
+						<td colspan="3">[마법피해]범위 내에 있는 에게 <font color=#DC143C>0.2</font>배의 범위 피해를 주고, 적군의 위치 변환.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">은밀전법</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Skill_DoubleCrash.png" width="100px" /></th>
+						<td colspan="3">[패시브]법사, 공병, 승병과 전투시 공격 <font color=#DC143C>+10%</font>, 방어 및 마방 <font color=#DC143C>+50%</font>.</td>
+					</tr>
+				</table>
+					<div class="view_title"><font color=#008B00>◆'봉인된 전장' 전장 버프들 예시 더많이있음..◆</font></div>
+					<table border="0" cellpadding="0" cellspacing="1">
+					<colgroup>
+						<col width="25%">
+						<col width="25%">
+						<col width="25%">
+						<col width="25%">
+					</colgroup>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">봉인의 전장</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Passive_AuraIntUp.png" width="100px" /></th>
+						<td colspan="3">[패시브]부대의 생명 <font color=#DC143C>+50%</font>,입히는 고정피해 <font color=#DC143C>+50%</font>.</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b><font color="#0070c0">봉인의 전장</font></b></td>
+					</tr>
+					<tr>
+						<td class="td_pd10"><img src="img/skills/Passive_AuraIntDown.png" width="100px" /></th>
+						<td colspan="3">[패시브]부대의 생명 <font color=#DC143C>+80%</font>,공격, 지력<font color=#DC143C>+40%</font>
+						<br>방어, 마방<font color=#DC143C>+20%</font>, 입히는피해<font color=#DC143C>+30%</font>,
+						<br>상성인 부대와 교전시 공격<font color=#DC143C>+50%</font></td>
+					</tr>
+			</table>
+			<br>
+  <button type="button" class="btn cancel" onclick="closeForm12()">Close</button>
+  </form>
+</div>
+<img class="filterDiv 봉인된전장" style="cursor:pointer;" onclick="openForm13()" src="img/Icon/BG_Seal01.png" width="33%"/>
+
+				<div class="chat-popup" id="myForm13">
+				  <form class="form-container">
+
+				<button type="button" class="btn cancel" onclick="closeForm13()">Close</button>
+					<div class="view_title"><font color=#008B00>◆'봉인된 전장' 시즌1 '봉인상점'◆</font></div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<colgroup>
+					<col width="25%">
+					<col width="35%">
+					<col width="20%">
+					<col width="20%">
+				</colgroup>
+				<tr>
+					<th colspan="2">교환</th>
+					<td><img src="img/item/Item_AncientGold.png"/></td>
+					<th>횟수</th>
+				</tr>
+				<tr>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 60,000</td>
+					<td>30</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/Awaken_Pack1.png"/></th>
+					<td>각성 1차 상자<br>각성 1차재료 8개</td>
+					<td>30</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th><img src="img/heart/x.png"/></th>
+					<td>초연의 마음</td>
+					<td>60</td>
+					<td>12</td>					
+				</tr>
+				<tr>
+					<th><img src="img/item/마음상자2.png"/></th>
+					<td>영혼의 원소</td>
+					<td>50</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/마음상자1.png"/></th>
+					<td>원주의 원소</td>
+					<td>40</td>
+					<td>12</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/쓰알악세.png"/></th>
+					<td>SSR 악세</td>
+					<td>250</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/스킨권.png"/></th>
+					<td>스킨권 X 50</td>
+					<td>150</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/Awaken_Stardust.png"/></th>
+					<td>각성 1차 재료 X 5</td>
+					<td>200</td>
+					<td>6</td>
+				</tr>
+			</table>
+				<div class="view_title"><font color=#008B00>◆'봉인된 전장' 시즌1 '업적'◆</font></div>
+					<table border="0" cellpadding="0" cellspacing="1">
+				<colgroup>
+					<col width="30%">
+					<col width="30%">
+					<col width="40%">
+				</colgroup>
+				<tr>
+					<th colspan="3">1지구</th>
+				</tr>
+				<tr>
+					<th colspan="2">업적</th>
+					<td>보상</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/6.png" width="64" height="64" /></th>
+					<td><img src="img/group/6.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/빨몬드.png"/>X 100</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/5.png" width="64" height="64" /></th>
+					<td><img src="img/group/5.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/골드티켓.png"/>X 1</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/6.png" width="64" height="64" /></th>
+					<td><img src="img/group/6.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/마음.png"/>X 2</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/5.png" width="64" height="64" /></th>
+					<td><img src="img/group/5.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알열쇠.png"/>X 8</td>
+				</tr>
+				<tr>
+					<th>완벽한 승리</th>
+					<td>아군의 사망없이 70등급 통과</td>
+					<td><img src="img/item/골드.png"/>X 50,000
+					<br><img src="img/item/쓰알마스터스톤.png"/>X 2</td>
+				</tr>
+				<tr>
+					<th colspan="3">2지구</th>
+				</tr>
+				<tr>
+					<th colspan="2">업적</th>
+					<td>보상</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/1.png" width="64" height="64" /></th>
+					<td><img src="img/group/1.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/빨몬드.png"/>X 100</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/2.png" width="64" height="64" /></th>
+					<td><img src="img/group/2.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/골드티켓.png"/>X 1</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/1.png" width="64" height="64" /></th>
+					<td><img src="img/group/1.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/마음.png"/>X 2</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/2.png" width="64" height="64" /></th>
+					<td><img src="img/group/2.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알열쇠.png"/>X 8</td>
+				</tr>
+				<tr>
+					<th>완벽한 승리</th>
+					<td>아군의 사망없이 70등급 통과</td>
+					<td><img src="img/item/골드.png"/>X 50,000
+					<br><img src="img/item/쓰알마스터스톤.png"/>X 2</td>
+				</tr>
+				<tr>
+					<th colspan="3">3지구</th>
+				</tr>
+				<tr>
+					<th colspan="2">업적</th>
+					<td>보상</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/0.png" width="64" height="64" /></th>
+					<td><img src="img/group/0.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/빨몬드.png"/>X 100</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/3.png" width="64" height="64" /></th>
+					<td><img src="img/group/3.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/골드티켓.png"/>X 1</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/0.png" width="64" height="64" /></th>
+					<td><img src="img/group/0.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/마음.png"/>X 2</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/3.png" width="64" height="64" /></th>
+					<td><img src="img/group/3.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알열쇠.png"/>X 8</td>
+				</tr>
+				<tr>
+					<th>완벽한 승리</th>
+					<td>아군의 사망없이 70등급 통과</td>
+					<td><img src="img/item/골드.png"/>X 50,000
+					<br><img src="img/item/쓰알마스터스톤.png"/>X 2</td>
+				</tr>
+				<tr>
+					<th colspan="3">4지구</th>
+				</tr>
+				<tr>
+					<th colspan="2">업적</th>
+					<td>보상</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/7.png" width="64" height="64" /></th>
+					<td><img src="img/group/7.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/빨몬드.png"/>X 100</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/10.png" width="64" height="64" /></th>
+					<td><img src="img/group/10.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/골드티켓.png"/>X 1</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/7.png" width="64" height="64" /></th>
+					<td><img src="img/group/7.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/마음.png"/>X 2</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/10.png" width="64" height="64" /></th>
+					<td><img src="img/group/10.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알열쇠.png"/>X 8</td>
+				</tr>
+				<tr>
+					<th>완벽한 승리</th>
+					<td>아군의 사망없이 70등급 통과</td>
+					<td><img src="img/item/골드.png"/>X 50,000
+					<br><img src="img/item/쓰알마스터스톤.png"/>X 2</td>
+				</tr>
+			</table>
+			<br>
+  <button type="button" class="btn cancel" onclick="closeForm13()">Close</button>
+  </form>
+</div>
+<img class="filterDiv 봉인된전장" style="cursor:pointer;" onclick="openForm14()" src="img/Icon/BG_Seal02.png" width="33%"/>
+
+				<div class="chat-popup" id="myForm14">
+				  <form class="form-container">
+
+				<button type="button" class="btn cancel" onclick="closeForm14()">Close</button>
+					<div class="view_title"><font color=#008B00>◆'봉인된 전장' 시즌2 '봉인상점'◆</font></div>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<colgroup>
+					<col width="25%">
+					<col width="35%">
+					<col width="20%">
+					<col width="20%">
+				</colgroup>
+				<tr>
+					<th colspan="2">교환</th>
+					<td><img src="img/item/Item_AncientGold.png"/></td>
+					<th>횟수</th>
+				</tr>
+				<tr>
+					<th><img src="img/item/골드.png"/></th>
+					<td>골드 X 100,000</td>
+					<td>50</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/Awaken_Pack1.png"/></th>
+					<td>각성 1차 상자<br>각성 1차재료 8개</td>
+					<td>30</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/Awaken_Pack2.png"/></th>
+					<td>각성 2차 상자<br>각성 2차재료 8개</td>
+					<td>60</td>
+					<td>10</td>				
+				</tr>
+				<tr>
+					<th><img src="img/item/유대날개.png"/></th>
+					<td>유대의 날개<br>유대 5번째 재료 6개</td>
+					<td>60</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/쓰알상자.png"/></th>
+					<td>훈련 교재 특선</td>
+					<td>60</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/쓰알갑옷.png"/></th>
+					<td>SSR 갑옷</td>
+					<td>200</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/쓰알악세.png"/></th>
+					<td>SSR 악세</td>
+					<td>200</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/형귀상자.png"/></th>
+					<td>형귀 보물 특선</td>
+					<td>300</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/스킨권.png"/></th>
+					<td>스킨권 X 50</td>
+					<td>150</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th><img src="img/item/룬스톤.png"/></th>
+					<td>룬스톤</td>
+					<td>400</td>
+					<td>1</td>
+				</tr>
+			</table>
+				<div class="view_title"><font color=#008B00>◆'봉인된 전장' 시즌2 '업적'◆</font></div>
+					<table border="0" cellpadding="0" cellspacing="1">
+				<colgroup>
+					<col width="30%">
+					<col width="30%">
+					<col width="40%">
+				</colgroup>
+				<tr>
+					<th colspan="3">1지구</th>
+				</tr>
+				<tr>
+					<th colspan="2">업적</th>
+					<td>보상</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/0.png" width="64" height="64" /></th>
+					<td><img src="img/group/0.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/빨몬드.png"/>X 100</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/3.png" width="64" height="64" /></th>
+					<td><img src="img/group/3.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/골드티켓.png"/>X 1</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/0.png" width="64" height="64" /></th>
+					<td><img src="img/group/0.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알마부.png"/>X 4</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/3.png" width="64" height="64" /></th>
+					<td><img src="img/group/3.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알열쇠.png"/>X 8</td>
+				</tr>
+				<tr>
+					<th>완벽한 승리</th>
+					<td>아군의 사망없이 70등급 통과</td>
+					<td><img src="img/item/골드.png"/>X 50,000
+					<br><img src="img/item/오락기.png"/>X 50</td>
+				</tr>
+				<tr>
+					<th colspan="3">2지구</th>
+				</tr>
+				<tr>
+					<th colspan="2">업적</th>
+					<td>보상</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/4.png" width="64" height="64" /></th>
+					<td><img src="img/group/4.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/빨몬드.png"/>X 100</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/8.png" width="64" height="64" /></th>
+					<td><img src="img/group/8.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/골드티켓.png"/>X 1</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/4.png" width="64" height="64" /></th>
+					<td><img src="img/group/4.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알마스터스톤.png"/>X 2</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/8.png" width="64" height="64" /></th>
+					<td><img src="img/group/8.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알열쇠.png"/>X 8</td>
+				</tr>
+				<tr>
+					<th>완벽한 승리</th>
+					<td>아군의 사망없이 70등급 통과</td>
+					<td><img src="img/item/골드.png"/>X 50,000
+					<br><img src="img/item/오락기.png"/>X 50</td>
+				</tr>
+				<tr>
+					<th colspan="3">3지구</th>
+				</tr>
+				<tr>
+					<th colspan="2">업적</th>
+					<td>보상</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/7.png" width="64" height="64" /></th>
+					<td><img src="img/group/7.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/빨몬드.png"/>X 100</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/10.png" width="64" height="64" /></th>
+					<td><img src="img/group/10.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/골드티켓.png"/>X 1</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/7.png" width="64" height="64" /></th>
+					<td><img src="img/group/7.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알마부.png"/>X 4</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/10.png" width="64" height="64" /></th>
+					<td><img src="img/group/10.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알열쇠.png"/>X 8</td>
+				</tr>
+				<tr>
+					<th>완벽한 승리</th>
+					<td>아군의 사망없이 70등급 통과</td>
+					<td><img src="img/item/골드.png"/>X 50,000
+					<br><img src="img/item/오락기.png"/>X 50</td>
+				</tr>
+				<tr>
+					<th colspan="3">4지구</th>
+				</tr>
+				<tr>
+					<th colspan="2">업적</th>
+					<td>보상</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/1.png" width="64" height="64" /></th>
+					<td><img src="img/group/1.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/빨몬드.png"/>X 100</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/2.png" width="64" height="64" /></th>
+					<td><img src="img/group/2.png" width="64" height="64" />5인으로 60등급 통과</td>
+					<td><img src="img/item/골드티켓.png"/>X 1</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/1.png" width="64" height="64" /></th>
+					<td><img src="img/group/1.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알마스터스톤.png"/>X 2</td>
+				</tr>
+				<tr>
+					<th>전장재림 <img src="img/group/2.png" width="64" height="64" /></th>
+					<td><img src="img/group/2.png" width="64" height="64" />5인으로 70등급 통과</td>
+					<td><img src="img/item/크리스탈.png"/>X 30
+					<br><img src="img/item/쓰알열쇠.png"/>X 8</td>
+				</tr>
+				<tr>
+					<th>완벽한 승리</th>
+					<td>아군의 사망없이 70등급 통과</td>
+					<td><img src="img/item/골드.png"/>X 50,000
+					<br><img src="img/item/오락기.png"/>X 50</td>
+				</tr>
+			</table>
+			<br>
+  <button type="button" class="btn cancel" onclick="closeForm14()">Close</button>
+  </form>
+</div>
+</section>
 </div>
 
 							</div>
