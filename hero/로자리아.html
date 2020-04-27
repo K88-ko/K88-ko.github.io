@@ -695,9 +695,10 @@
 					<tr>
 						<th><img src="../img/skills/Skill_Rozalia1.png" width="100" /></th>
 						<td colspan="3">[액티브]사용후, 목표지형에 [비호의 검]:
-						<br>본 지형은 [지휘] 주위 1칸 범위내의 모든 아군의 생명을 제외한 모든 속성 +10%, 3턴 지속. 사용후 공격가능.
+						<br>본 지형은 [지휘] 주위 1칸 범위내의 모든 아군의 생명을 제외한 모든 속성 +10%, 3턴 지속.
 						<br>(로자리아가 [신앙] 1개를 보유중이면 지휘 범위 2칸으로 상승,
 						<br>[신앙] 3개를 보유중이면 "공격하여 전투진입시, 전투후 입힌 피해의 20%만큼의 생명회복" 지휘 효과추가.)
+						<br>로자리아가 [신앙]을 보유중일시, 사용후 3칸 재이동 및 공격가능.
 						<br>(기술 사용 시 자신이 보유중인 강화상태의 지속턴수가 감소하지않으며,
 						<br>[비호의 검]이외의 다른 영웅의 지형효과로 제거할수 없음.)
 						</td>
@@ -880,10 +881,10 @@ $(document).ready(function(){
 		starCaptions: {
 		1: '1성',
 		2: '2성',
-		3: '생명 <font color="red">50%</font>이상일때 전투진입시 공격, 방어 <font color="red">+5%</font>.<br>전투진입전 [신앙] : 입히는피해 <font color="red">+2%</font>, 받는피해 <font color="red">-2%</font>, 중첩가능. 최대 <font color="red">3</font>중첩.',
-		4: '생명 <font color="red">50%</font>이상일때 전투진입시 공격, 방어 <font color="red">+10%</font>.<br>전투진입전 [신앙] : 입히는피해 <font color="red">+3%</font>, 받는피해 <font color="red">-3%</font>, 중첩가능. 최대 <font color="red">3</font>중첩.',
-		5: '생명 <font color="red">50%</font>이상일때 전투진입시 공격, 방어 <font color="red">+15%</font>.<br>전투진입전 [신앙] : 입히는피해 <font color="red">+4%</font>, 받는피해 <font color="red">-4%</font>, 중첩가능. 최대 <font color="red">3</font>중첩.',
-		6: '생명 <font color="red">50%</font>이상일때 전투진입시 공격, 방어 <font color="red">+20%</font>.<br>전투진입전 [신앙] : 입히는피해 <font color="red">+5%</font>, 받는피해 <font color="red">-5%</font>, 중첩가능. 최대 <font color="red">3</font>중첩.'
+		3: '생명 <font color="red">50%</font>이상일때 전투진입시 공격, 방어 <font color="red">+5%</font>.<br>전투진입전 또는 행동종료시 자신주위 <font color="red">2</font>칸 범위내 적군이 있을경우 [신앙] 획득:<br> 입히는피해 <font color="red">+2%</font>, 받는피해 <font color="red">-2%</font>, 중첩가능. 최대 <font color="red">3</font>중첩.',
+		4: '생명 <font color="red">50%</font>이상일때 전투진입시 공격, 방어 <font color="red">+10%</font>.<br>전투진입전 또는 행동종료시 자신주위 <font color="red">2</font>칸 범위내 적군이 있을경우 [신앙] 획득:<br> 입히는피해 <font color="red">+3%</font>, 받는피해 <font color="red">-3%</font>, 중첩가능. 최대 <font color="red">3</font>중첩.',
+		5: '생명 <font color="red">50%</font>이상일때 전투진입시 공격, 방어 <font color="red">+15%</font>.<br>전투진입전 또는 행동종료시 자신주위 <font color="red">2</font>칸 범위내 적군이 있을경우 [신앙] 획득:<br> 입히는피해 <font color="red">+4%</font>, 받는피해 <font color="red">-4%</font>, 중첩가능. 최대 <font color="red">3</font>중첩.',
+		6: '생명 <font color="red">50%</font>이상일때 전투진입시 공격, 방어 <font color="red">+20%</font>.<br>전투진입전 또는 행동종료시 자신주위 <font color="red">2</font>칸 범위내 적군이 있을경우 [신앙] 획득:<br> 입히는피해 <font color="red">+5%</font>, 받는피해 <font color="red">-5%</font>, 중첩가능. 최대 <font color="red">3</font>중첩.'
 		},
 		starCaptionClasses: {1: 'text-info', 2: 'text-info', 3: 'text-info', 4: 'text-info', 5: 'text-info', 6: 'text-info'},
 		filledStar: '<img src="../img/Icon/Icon_StarGold.png" width="35">',
